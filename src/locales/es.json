@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "team": "Equipo",
+    "projects": "Proyectos",
+    "technologies": "Tecnologías",
+    "open": "Abrir menú",
+    "close": "Cerrar menú"
+  },
+  "language": {
+    "select": "Seleccionar idioma"
+  },
+  "theme": {
+    "light": "Modo claro",
+    "dark": "Modo oscuro",
+    "toggleLight": "Cambiar a modo claro",
+    "toggleDark": "Cambiar a modo oscuro"
+  },
+  "hero": {
+    "welcome": "Bienvenidos a",
+    "description": "Somos una organización de desarrolladores apasionados por la tecnología y el código abierto. Creamos proyectos innovadores con un toque de humor y creatividad.",
+    "github": "Visítanos en GitHub",
+    "projects": "Ver proyectos"
+  },
+  "team": {
+    "title": "Nuestro Equipo",
+    "description": "Conoce a los miembros que hacen posible DuckHats, una combinación de talento y pasión por el desarrollo.",
+    "developer": "Desarrollador",
+    "designer": "Diseñador",
+    "manager": "Gestor de proyectos"
+  },
+  "projects": {
+    "title": "Nuestros Proyectos",
+    "description": "Descubre algunos de nuestros proyectos destacados en los que estamos trabajando.",
+    "viewMore": "Ver más en GitHub",
+    "eduQuackDesc": "Una plataforma educativa para facilitar la comunicación entre profesores y estudiantes.",
+    "duckHuntDesc": "Una versión moderna del clásico juego Duck Hunt con nuevas funcionalidades.",
+    "duckDocsDesc": "Sistema de documentación para proyectos de código abierto."
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "description": "Las herramientas y tecnologías que utilizamos para crear nuestros proyectos."
+  },
+  "footer": {
+    "tagline": "Desarrollando con pasión y un toque de humor.",
+    "rights": "Todos los derechos reservados.",
+    "madeWith": "Hecho con",
+    "by": "por"
+  }
+}
