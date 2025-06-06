@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
       }} />
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 mb-16">
-          <div className="md:w-1/2 text-center md:text-left">
+          <div className="md:w-1/2 text-center md:text-left pl-4 md:pl-0">
             <motion.h1
               className="text-4xl md:text-7xl font-bold mb-6 text-white glitch-text"
               initial={{ opacity: 0, y: -20 }}
@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
               transition={{ duration: 0.8, ease: 'easeOut' }}
             >
               <span className="block">{t('hero.welcome')}</span>
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-400">
                 DuckHats
               </span>
             </motion.h1>

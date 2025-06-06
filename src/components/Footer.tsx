@@ -41,25 +41,25 @@ export const Footer: React.FC = () => {
             </div>
             <nav className="flex flex-wrap justify-center md:justify-end gap-4">
               <a
-                href="#home"
+                href="/"
                 className={`${styles.text.secondary} hover:${styles.text.primary} transition-colors`}
               >
                 {t('nav.home')}
               </a>
               <a
-                href="#team"
+                href="/team"
                 className={`${styles.text.secondary} hover:${styles.text.primary} transition-colors`}
               >
                 {t('nav.team')}
               </a>
               <a
-                href="#projects"
+                href="/projects"
                 className={`${styles.text.secondary} hover:${styles.text.primary} transition-colors`}
               >
                 {t('nav.projects')}
               </a>
               <a
-                href="#technologies"
+                href="/technologies"
                 className={`${styles.text.secondary} hover:${styles.text.primary} transition-colors`}
               >
                 {t('nav.technologies')}
