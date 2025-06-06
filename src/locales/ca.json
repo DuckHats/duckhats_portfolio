@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Inici",
+    "team": "Equip",
+    "projects": "Projectes",
+    "technologies": "Tecnologies",
+    "open": "Obrir menú",
+    "close": "Tancar menú"
+  },
+  "language": {
+    "select": "Seleccionar idioma"
+  },
+  "theme": {
+    "light": "Mode clar",
+    "dark": "Mode fosc",
+    "toggleLight": "Canviar a mode clar",
+    "toggleDark": "Canviar a mode fosc"
+  },
+  "hero": {
+    "welcome": "Benvinguts a",
+    "description": "Som una organització de desenvolupadors apassionats per la tecnologia i el codi obert. Creem projectes innovadors amb un toc d'humor i creativitat.",
+    "github": "Visita'ns a GitHub",
+    "projects": "Veure projectes"
+  },
+  "team": {
+    "title": "El Nostre Equip",
+    "description": "Coneix els membres que fan possible DuckHats, una combinació de talent i passió pel desenvolupament.",
+    "developer": "Desenvolupador",
+    "designer": "Dissenyador",
+    "manager": "Gestor de projectes"
+  },
+  "projects": {
+    "title": "Els Nostres Projectes",
+    "description": "Descobreix alguns dels nostres projectes destacats en què estem treballant.",
+    "viewMore": "Veure més a GitHub",
+    "eduQuackDesc": "Una plataforma educativa per facilitar la comunicació entre professors i estudiants.",
+    "duckHuntDesc": "Una versió moderna del clàssic joc Duck Hunt amb noves funcionalitats.",
+    "duckDocsDesc": "Sistema de documentació per a projectes de codi obert."
+  },
+  "technologies": {
+    "title": "Tecnologies",
+    "description": "Les eines i tecnologies que utilitzem per crear els nostres projectes."
+  },
+  "footer": {
+    "tagline": "Desenvolupant amb passió i un toc d'humor.",
+    "rights": "Tots els drets reservats.",
+    "madeWith": "Fet amb",
+    "by": "per"
+  }
+}

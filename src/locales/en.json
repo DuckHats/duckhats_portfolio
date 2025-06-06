@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Home",
+    "team": "Team",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "open": "Open menu",
+    "close": "Close menu"
+  },
+  "language": {
+    "select": "Select language"
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "toggleLight": "Switch to light mode",
+    "toggleDark": "Switch to dark mode"
+  },
+  "hero": {
+    "welcome": "Welcome to",
+    "description": "We are an organization of developers passionate about technology and open source. We create innovative projects with a touch of humor and creativity.",
+    "github": "Visit us on GitHub",
+    "projects": "View projects"
+  },
+  "team": {
+    "title": "Our Team",
+    "description": "Meet the members who make DuckHats possible, a combination of talent and passion for development.",
+    "developer": "Developer",
+    "designer": "Designer",
+    "manager": "Project Manager"
+  },
+  "projects": {
+    "title": "Our Projects",
+    "description": "Discover some of our featured projects we're working on.",
+    "viewMore": "View more on GitHub",
+    "eduQuackDesc": "An educational platform to facilitate communication between teachers and students.",
+    "duckHuntDesc": "A modern version of the classic Duck Hunt game with new features.",
+    "duckDocsDesc": "Documentation system for open source projects."
+  },
+  "technologies": {
+    "title": "Technologies",
+    "description": "The tools and technologies we use to create our projects."
+  },
+  "footer": {
+    "tagline": "Developing with passion and a touch of humor.",
+    "rights": "All rights reserved.",
+    "madeWith": "Made with",
+    "by": "by"
+  }
+}
