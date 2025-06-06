@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { GithubIcon, Linkedin } from 'lucide-react';
+import { GithubIcon, Globe, Linkedin } from 'lucide-react';
 import { teamMembers } from '../data/teamData';
 import { useThemeStyles } from '../hooks/useThemeStyles';
 
@@ -67,29 +67,48 @@ export const Team: React.FC = () => {
                 <p className={`${styles.text.secondary} mb-6 text-center text-lg`}>
                   {member.role}
                 </p>
-                <div className="flex justify-center">
-                  <motion.a
-                    href={member.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`inline-flex items-center gap-2 px-6 py-3 ${styles.background.tertiary} ${styles.text.primary} rounded-full hover:shadow-lg transition-all duration-300`}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <GithubIcon size={18} />
-                    GitHub
-                  </motion.a>
-                  <motion.a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`inline-flex items-center gap-2 px-6 py-3 ${styles.background.tertiary} ${styles.text.primary} rounded-full hover:shadow-lg transition-all duration-300`}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Linkedin size={18} />
-                    Linkedin
-                  </motion.a>
+                <div className="flex flex-col items-center gap-4">
+                  <div className="flex gap-4">
+                    {member.github && (
+                      <motion.a
+                        href={member.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center gap-2 px-6 py-3 ${styles.background.tertiary} ${styles.text.primary} rounded-full hover:shadow-lg transition-all duration-300`}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <GithubIcon size={18} />
+                        GitHub
+                      </motion.a>
+                    )}
+                    {member.linkedin && (
+                      <motion.a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center gap-2 px-6 py-3 ${styles.background.tertiary} ${styles.text.primary} rounded-full hover:shadow-lg transition-all duration-300`}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Linkedin size={18} />
+                        Linkedin
+                      </motion.a>
+                    )}
+                  </div>
+                  {member.portfolio && (
+                    <motion.a
+                      href={member.portfolio}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-center gap-2 px-5 py-3 ${styles.background.tertiary} ${styles.text.primary} rounded-full hover:shadow-lg transition-all duration-300`}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Globe size={18} />
+                      Portfolio
+                    </motion.a>
+                  )}
                 </div>
               </div>
             </motion.div>
