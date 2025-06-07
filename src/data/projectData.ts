@@ -12,31 +12,22 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    name: 'eduQuack',
-    description: 'An educational platform to facilitate communication between teachers and students.',
+    name: 'MenuQuack',
+    description: 'A comprehensive menu management system for schools or middle infrestructures.',
     image: 'https://picsum.photos/800/400?random=1',
     github: 'https://github.com/DuckHats/eduquack',
     demo: 'https://eduquack.duckhats.com',
-    stars: 156,
-    tags: ['React', 'Node.js', 'MongoDB', 'TypeScript']
+    stars: 15,
+    tags: ['Angular', 'Node.js', 'Mysql', 'Laravel', 'Docker']
   },
   {
     id: 2,
-    name: 'DuckHunt',
-    description: 'A modern version of the classic Duck Hunt game with new features.',
+    name: 'SummerCampDuck',
+    description: 'A fun and interactive summer camp management platform.',
     image: 'https://picsum.photos/800/400?random=2',
     github: 'https://github.com/DuckHats/duckhunt',
     demo: 'https://duckhunt.duckhats.com',
-    stars: 89,
-    tags: ['JavaScript', 'Canvas', 'WebGL', 'HTML5']
-  },
-  {
-    id: 3,
-    name: 'DuckDocs',
-    description: 'Documentation system for open source projects.',
-    image: 'https://picsum.photos/800/400?random=3',
-    github: 'https://github.com/DuckHats/duckdocs',
-    stars: 234,
-    tags: ['Python', 'FastAPI', 'PostgreSQL', 'Docker']
+    stars: 10,
+    tags: ['Angular', 'Node.js', 'Mysql', 'Laravel', 'Docker']
   }
 ]; 

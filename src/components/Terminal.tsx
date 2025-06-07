@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+
 
 interface Command {
   command: string;
@@ -72,22 +74,23 @@ export const Terminal: React.FC = () => {
       terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
     }
   }, [history]);
+  const navigate = useNavigate();
 
   const handleCommand = (cmd: string) => {
     const normalizedCmd = cmd.toLowerCase().trim();
-    
+
     if (normalizedCmd) {
       setCommandHistory(prev => [cmd, ...prev]);
       setHistoryIndex(-1);
 
       let response: string[] = [];
-      
+
       if (normalizedCmd.startsWith('cd ')) {
         const project = normalizedCmd.split(' ')[1];
         response = [`Navigating to ${project}...`, 'Project details will be displayed below'];
+
         setTimeout(() => {
-          const element = document.getElementById('projects');
-          element?.scrollIntoView({ behavior: 'smooth' });
+          navigate('/projects', { state: { scrollToId: 'projects' } });
         }, 1000);
       } else if (normalizedCmd in commands) {
         response = commands[normalizedCmd].handler();
@@ -102,6 +105,7 @@ export const Terminal: React.FC = () => {
       setInput('');
     }
   };
+
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
@@ -126,10 +130,10 @@ export const Terminal: React.FC = () => {
     } else if (e.key === 'Tab') {
       e.preventDefault();
       const currentInput = input.toLowerCase();
-      const matchingCommands = Object.keys(commands).filter(cmd => 
+      const matchingCommands = Object.keys(commands).filter(cmd =>
         cmd.startsWith(currentInput)
       );
-      
+
       if (matchingCommands.length === 1) {
         setInput(matchingCommands[0]);
       } else if (matchingCommands.length > 1) {
@@ -149,7 +153,7 @@ export const Terminal: React.FC = () => {
         <div className="w-3 h-3 rounded-full bg-green-500"></div>
         <span className="text-gray-400 text-xs ml-2">duckhats@terminal</span>
       </div>
-      <div 
+      <div
         ref={terminalRef}
         className="h-64 overflow-y-auto mb-4 space-y-2 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent"
       >

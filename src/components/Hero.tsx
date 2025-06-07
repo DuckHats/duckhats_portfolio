@@ -54,7 +54,7 @@ export const Hero: React.FC = () => {
             {t('hero.github')}
           </motion.a>
           <motion.a
-            href="#projects"
+            href="/projects"
             className="flex items-center gap-2 px-6 py-3 bg-green-500/20 backdrop-blur-sm text-green-400 rounded-lg hover:bg-green-500/30 transition-all duration-300 border border-green-500/30"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
