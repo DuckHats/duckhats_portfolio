@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { GithubIcon, HeartIcon, X } from 'lucide-react';
+import { GithubIcon, HeartIcon, TwitterIcon } from 'lucide-react';
 import { useThemeStyles } from '../hooks/useThemeStyles';
 
 export const Footer: React.FC = () => {
@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
                 className={`p-2 rounded-full ${styles.background.tertiary} ${styles.text.primary} hover:${styles.hover.primary} transition-colors`}
                 aria-label="Twitter"
               >
-                <X size={20} />
+                <TwitterIcon size={20} />
               </a>
             </div>
             <nav className="flex flex-wrap justify-center md:justify-end gap-4">
