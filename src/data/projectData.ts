@@ -12,31 +12,12 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    name: 'eduQuack',
-    description: 'An educational platform to facilitate communication between teachers and students.',
-    image: 'https://picsum.photos/800/400?random=1',
-    github: 'https://github.com/DuckHats/eduquack',
-    demo: 'https://eduquack.duckhats.com',
-    stars: 156,
-    tags: ['React', 'Node.js', 'MongoDB', 'TypeScript']
-  },
-  {
-    id: 2,
-    name: 'DuckHunt',
-    description: 'A modern version of the classic Duck Hunt game with new features.',
-    image: 'https://picsum.photos/800/400?random=2',
-    github: 'https://github.com/DuckHats/duckhunt',
-    demo: 'https://duckhunt.duckhats.com',
-    stars: 89,
-    tags: ['JavaScript', 'Canvas', 'WebGL', 'HTML5']
-  },
-  {
-    id: 3,
-    name: 'DuckDocs',
-    description: 'Documentation system for open source projects.',
-    image: 'https://picsum.photos/800/400?random=3',
-    github: 'https://github.com/DuckHats/duckdocs',
-    stars: 234,
-    tags: ['Python', 'FastAPI', 'PostgreSQL', 'Docker']
+    name: 'Food for ducks',
+    description: 'Food order management platform.',
+    image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthehomesteadinghippy.com%2Fwp-content%2Fuploads%2F2023%2F12%2Ftwo-ducks-eating-watermelon.jpg&f=1&nofb=1&ipt=2ecc5034a8922d7e68859484b26b8cdc78de21e319733f659dabdeec4016ccf3',
+    github: 'https://github.com/DuckHats/menu-ginebro-front', // Cambiar al link demo
+    demo: '',
+    stars: 0,
+    tags: ['Angular', 'Laravel', 'Mysql', 'TypeScript', 'PHP']
   }
 ]; 
