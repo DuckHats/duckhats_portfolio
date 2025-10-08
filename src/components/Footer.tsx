@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
                 <GithubIcon size={20} />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/hats4ducks"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`p-2 rounded-full ${styles.background.tertiary} ${styles.text.primary} hover:${styles.hover.primary} transition-colors`}
