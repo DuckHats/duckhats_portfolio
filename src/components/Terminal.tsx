@@ -43,9 +43,7 @@ export const Terminal: React.FC = () => {
       description: 'List our projects',
       handler: () => [
         '📂 Current projects:',
-        '  • eduQuack - Educational platform',
-        '  • DuckHunt - Modern game remake',
-        '  • DuckDocs - Documentation system',
+        '  • Food for Ducks - food orders gesture app',
         '',
         'Type "cd project-name" for more info'
       ]
@@ -55,7 +53,7 @@ export const Terminal: React.FC = () => {
       handler: () => [
         '📫 Get in touch:',
         '  • GitHub: github.com/DuckHats',
-        '  • Email: info@duckhats.com'
+        '  • Email: duck4hats@gmail.com'
       ]
     },
     clear: {
