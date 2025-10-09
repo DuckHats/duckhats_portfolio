@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Navigate, redirect } from 'react-router-dom';
 
 interface Command {
   command: string;
@@ -43,7 +44,7 @@ export const Terminal: React.FC = () => {
       description: 'List our projects',
       handler: () => [
         '📂 Current projects:',
-        '  • Food for Ducks - food orders gesture app',
+        '  • menu-ginebro-front - food orders gesture app',
         '',
         'Type "cd project-name" for more info'
       ]
@@ -83,6 +84,7 @@ export const Terminal: React.FC = () => {
       if (normalizedCmd.startsWith('cd ')) {
         const project = normalizedCmd.split(' ')[1];
         response = [`Navigating to ${project}...`, 'Project details will be displayed below'];
+        window.location.href = `https://github.com/DuckHats/${project}`;
         setTimeout(() => {
           const element = document.getElementById('projects');
           element?.scrollIntoView({ behavior: 'smooth' });
